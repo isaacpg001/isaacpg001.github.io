@@ -10,11 +10,11 @@ paginate: 8
 paginate_path: "page:num"
 
 # presonal config
-title: haidaoxiaofei's Blog
-description: haidaoxiaofei's Blog, powered by Jekyll...
-feed: http://haidaoxiaofei.github.io/atom.xml
+title: Isaac's Blog
+description: isaac's Blog, powered by Jekyll...
+# feed: http://haidaoxiaofei.github.io/atom.xml
 
-author: haidaoxiaofei
+author: Isaacpg
 
 seo: 
   keyword: 
