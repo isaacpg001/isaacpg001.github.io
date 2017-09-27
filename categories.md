@@ -2,14 +2,34 @@
 layout: default
 title: "Categories"
 ---
-<ul class="list-unstyled">
-{% for cat in site.categories %} 
-	{% if cat[0] != 'blog' %} 
-   <a name="{{ cat[0] }}"></a>
-   <h3>{{ cat[0] }}({{ cat[1].size }})</h3> 
-     {% for post in cat[1] %} 
-    <li><h4><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></h4></li>
-	{% endfor %} 
-   {% endif %} 
-{% endfor %} 
-</ul>
+{% extends '_layout.swig' %}
+{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
+
+{% block title %} {{ __('title.category') }}: {{ page.category }} | {{ config.title }} {% endblock %}
+
+{% block content %}
+
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        {{ page.category }}
+        <small>{{  __('title.category')  }}</small>
+      </h2>
+    </div>
+
+    {% for post in page.posts %}
+      {{ post_template.render(post) }}
+    {% endfor %}
+  </section>
+
+  {% include '_partials/pagination.swig' %}
+
+{% endblock %}
+
+{% block sidebar %}
+  {{ sidebar_template.render(false) }}
+{% endblock %}
+
+
+
