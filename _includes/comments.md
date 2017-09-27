@@ -19,3 +19,9 @@ var duoshuoQuery = {short_name:"geeklu"};
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
 
+  <!-- UY BEGIN -->
+  <div id="uyan_frame">
+  </div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1987043">
+  </script>
+  <!-- UY END -->
