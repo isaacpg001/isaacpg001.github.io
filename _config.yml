@@ -1,25 +1,7 @@
-markdown: kramdown
-permalink: /:categories/:title.html
-url: 
-lsi: false
-rouge: true
-safe: true
-auto: false 
-
-paginate: 8
-paginate_path: "page:num"
-
-# presonal config
-title: Isaac's Blog
-description: isaac's Blog, powered by Jekyll...
-# feed: http://haidaoxiaofei.github.io/atom.xml
-
-author: Isaacpg
-
-seo: 
-  keyword: 
-  description: 
-config:
-  js_dir:
-  img_dir:
-  css_dir:
+permalink: /:year/:month/:title/
+url: http://geeklu.com
+author: 卢克
+highlighter: rouge
+timezone: Asia/Shanghai
+gems: [jekyll-paginate]
+paginate: 24

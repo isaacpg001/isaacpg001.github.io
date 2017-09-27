@@ -1,50 +1,58 @@
---- 
-layout: default 
---- 
-<!-- Blog Post -->
-<!-- Title -->
-<h2>
-  {{ page.title }}
-  <div class="post-date"><a
-  href="https://github.com/isaacpg001/isaacpg001.github.io/edit/master/{{ page.path }}"
-  target="_blank">Correct</a>&nbsp;&nbsp;
-	<span class="glyphicon glyphicon-time"></span>
-	{{ page.date | date_to_string }}
-  </div>
-</h2>
-<!-- Author -->
-<hr>
+---
+layout: default
+---
+
+<section class="post">
 {{ content }}
-<br/>
-<div style="margin-top:10px;margin-bottom:10px">
-  {%if page.previous%}
-  <span class="next">
-    Previous：
-    <a href="{{page.previous.url}}">
-      {{page.previous.title}}
-    </a>
-  </span>
-  {%endif%} 
-  {%if page.next%}
-  <span class="prev">
-    Next：
-    <a href="{{page.next.url}}">
-      {{page.next.title}}
-    </a>
-  </span>
-  {%endif%}
-</div>
-<hr>
-<!-- UJian Button BEGIN -->
-<!--
-<div class="ujian-hook"></div>
-<script type="text/javascript">var ujian_config = {num:6,picSize:84,textHeight:45};</script>
-<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1987043"></script>
-<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png"
-alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
--->
-<!-- UJian Button END -->
-<!-- Blog Comments -->
-<div class="media">
-  {% include disqus.html %} 
-</div>
+</section>
+<section class="meta">
+<span class="author">
+  <a href="http://geeklu.com">{{ site.author }}</a>
+</span>
+<span class="time">
+  /
+  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+</span>
+<br />
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span>
+{% if page.categories %}
+<span class="categories">
+  in categories
+  {% for cat in page.categories %}
+  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+{% if page.tags %}
+<span class="tags">
+  tagged with 
+  {% for tag in page.tags %}
+  <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+  {% endfor %}
+</span>
+{% endif %}
+</section>
+{% include comments.md %}
+<script type="text/javascript">
+$(function(){
+  $(document).keydown(function(e) {
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+            {% if page.previous %}
+        url = '{{ site.url }}{{ page.previous.url }}';
+        {% endif %}
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+            {% if page.next %}
+        url = '{{ site.url }}{{ page.next.url }}';
+        {% endif %}
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
+</script>
+
