@@ -1,6 +1,20 @@
 permalink: /:year/:month/:title/
+markdown: kramdown
+lsi: false
+rouge: true
+safe: true
+auto: false 
 author: Isaac
+description: isaac's Blog, powered by Jekyll...
 highlighter: rouge
 timezone: Asia/Shanghai
 gems: [jekyll-paginate]
 paginate: 24
+
+seo: 
+  keyword: 
+  description: 
+config:
+  js_dir:
+  img_dir:
+  css_dir:
