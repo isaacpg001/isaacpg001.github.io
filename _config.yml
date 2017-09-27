@@ -1,9 +1,29 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+=======
+# Site settings
+title: 读立写生
+header-img: "img/Xacebook.jpg"
+tagline: "cn"  
+description: "陈素封|读而立·写而生"  
+baseurl: ""
+# url: "http://www.cnfeat.com"  
+
+# About/contact
+owner: 
+  name: " CNFeat"
+  email: CNFeat@gmail.com
+  bio: "每天写1000字改变自己"
+
+# Data
+gavatar: http://openmindclub.qiniudn.com/omt/GavatarCNFeat.png
+favicon: img/favicon.ico
+>>>>>>> a0ec07a48299ba92fe2dfb68d1d26081b28c35e6
 
 # Site settings
 title: Csega's blog
@@ -19,3 +39,39 @@ github_username:  csega
 
 # Build settings
 markdown: kramdown
+<<<<<<< HEAD
+=======
+highlighter: rouge
+permalink: pretty
+paginate: 15
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "CNFeat"
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : disqus
+  duoshuo :
+    short_name : cnfeat
+  disqus :
+      short_name : cnfeat
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-80884545-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
+>>>>>>> a0ec07a48299ba92fe2dfb68d1d26081b28c35e6
