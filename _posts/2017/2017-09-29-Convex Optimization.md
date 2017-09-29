@@ -47,7 +47,7 @@ $$
 
 
 #### 4. Besides 
-If $f(x,\lambda) = x^2 -2\lambda x$, which is linear in $\lmbda$, the infimum of $f(x,\lambda)$ is 
+If $f(x,\lambda) = x^2 -2\lambda x$, which is linear in $\lambda$, the infimum of $f(x,\lambda)$ is 
 
 $$f^+(\lambda) = -\lambda^2$$
 
