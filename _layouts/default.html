@@ -39,11 +39,14 @@
    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
  
+
     
     
-    <main class="page-main">
-            <header class="page-header">
-                <hgroup class="page-hgroup">
+
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+               <hgroup class="page-hgroup">
                 <h1 class="page-title"><a class="page-title-link" href="{% if page.title %}{{ page.url }}{% else %}{{ site.home }}{% endif %}">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</a>
                 {% if page.url == '/archive.html' %}<input class="page-search-input" type="text" placeholder="搜索（回车全文搜索）" />{% endif %}
                 </h1>
@@ -57,12 +60,7 @@
                     {% endif %}
                     </h2>
                 </hgroup>
-            </header>
-           </main>
           
-    <div id="container">
-      <div id="main" role="main">
-        <header>
         <div class="buttons">
           <a href="/" class="ss-icon" title="Go to Homepage">home</a>
           <a href="/categories" class="ss-icon" title="Category" >list</a>
