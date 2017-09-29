@@ -75,7 +75,7 @@ where $U_j = 1-\sum_{i = j+1}^{n+1} c_i$ and $x_0=0$.
 
 $\rightarrow$  
 
-Let $\mathcal{P}_j = \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdots \int_{x_{n-1}\ \ +c_n}^{U_n} dx_n$.  Now we will show that 
+Let $\ \mathcal{P}_{j} = \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdots \int_{x_{n-1}\ \ +c_n}^{U_n} dx_n$.  Now we will show that 
 
 $$Lemma:\ \ \ \ \mathcal{P}_j  = \frac{1}{(n-j+1)!}(U_{j-1}-x_{j-1})^{n-j+1},\ \ if\ j\geq1$$
 
@@ -90,7 +90,7 @@ $$
 
 Therefore the Lemma is verified.
 
-$\rightarrow$ $P = n!\mathcal{P}_1 = (U_0-x_0)^n = (1-\sum_{i=1}c_i)^n$
+$\rightarrow$ $P = n! \mathcal{P}_{1} = (U_0-x_0)^n = (1-\sum_{i=1}c_i)^n$
 
 $\rightarrow$  QED
 
