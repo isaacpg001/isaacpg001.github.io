@@ -8,7 +8,7 @@ var duoshuoQuery = {short_name:"geeklu"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'https:') + '//static.duoshuo.com/embed.js';
 		ds.charset = 'UTF-8';
 		(document.getElementsByTagName('head')[0] 
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
@@ -16,12 +16,12 @@ var duoshuoQuery = {short_name:"geeklu"};
 	</script>
 <!-- 多说公共JS代码 end -->
 
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
 
   <!-- UY BEGIN -->
   <div id="uyan_frame">
   </div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1987043">
+  <script type="text/javascript" src="https://v2.uyan.cc/code/uyan.js?uid=1987043">
   </script>
   <!-- UY END -->
