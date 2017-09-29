@@ -33,29 +33,6 @@
     <link href="/media/css/screen.css" rel="stylesheet">
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
 
-  <!-- mathjax config similar to math.stackexchange -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-  });
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript"
-   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-    
-    
   </head>
   <body>
     <div id="container">
@@ -99,30 +76,28 @@
   </body>
 
 </html>
+{% include nav.html %}
 
+        <main class="page-main">
 
-    <script>
-		window._bd_share_config={
-			"common":{
-				"bdSnsKey":{},
-				"bdText":"",
-				"bdMini":"1",
-				"bdMiniList":["qzone","weixin","sqq","tsina","douban","fbook","twi","tieba","linkedin","youdao","print"],
-				"bdPic":"",
-				"bdStyle":"0",
-				"bdSize":"16"
-			},
-			"slide":{
-				"type":"slide",
-				"bdImg":"4",
-				"bdPos":"right",
-				"bdTop":"65.5"
-			},
-			"image":{
-				"viewList":["qzone","sqq","tsina","weixin"],
-				"viewText":"分享到：",
-				"viewSize":"16"
-			}
-		};
-		with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-	</script>
+            <header class="page-header">
+                <hgroup class="page-hgroup">
+                <h1 class="page-title"><a class="page-title-link" href="{% if page.title %}{{ page.url }}{% else %}{{ site.home }}{% endif %}">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</a>
+                {% if page.url == '/archive.html' %}<input class="page-search-input" type="text" placeholder="搜索（回车全文搜索）" />{% endif %}
+                </h1>
+                    <h2 class="page-subtitle">
+                    {% if page.date %}
+                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y 年 %m 月 %d 日 %R" }}</time>
+                        <span class="post-count">本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟</span>
+                    {% elsif paginator or page.url == '/tech.html' or page.url == '/life.html' %}
+                        <div class="post-cats">
+                            <a class="post-cat-tag{% if paginator %} active{% endif %}" href="/">全部</a>
+                            <a class="post-cat-tag{% if page.url == '/tech.html' %} active{% endif %}" href="/tech.html">技术</a>
+                            <a class="post-cat-tag{% if page.url == '/life.html' %} active{% endif %}" href="/life.html">生活</a>
+                        </div>
+                    {% else %}
+                        {{ page.description }}
+                    {% endif %}
+                    </h2>
+                </hgroup>
+            </header>
