@@ -66,7 +66,6 @@ P(V_1\geq c_1,  V_2\geq c_2,\cdots V_{n+1}\geq c_{n+1}) \\
 = n! \int_{x_0 + c_1}^{U_1} dx_1 \int_{x_1 + c_2}^{U_2} dx_2 \cdots  \int_{x_{n-1}\ \ +c_n}^{U_n} dx_n
 \end{array}$$
 
-
 where $U_j = 1-\sum_{i = j+1}^{n+1} c_i$ and $x_0=0$. 
 
 $\rightarrow $  Let  $\mathcal{P}_j =   \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdots  \int_{x_{n-1}\  \ +c_n}^{U_n} dx_n $.  。Now we will show that 
@@ -85,6 +84,7 @@ $$
 Therefore the Lemma is verified.
 
 $\rightarrow $ 
+
 $P = n!\mathcal{P}_1 = (U_0-x_0)^n = (1-\sum_{i=1}c_i)^n $
 
 $\rightarrow $  QED
