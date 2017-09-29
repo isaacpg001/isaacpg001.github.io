@@ -49,6 +49,6 @@ $$
 #### 4. Besides 
 If $f(x,\lambda) = x^2 -2\lambda x$, which is linear in $\lambda$, the infimum of $f(x,\lambda)$ is 
 
-$$f^+(\lambda) = -\lambda^2$$
+$$f^-(\lambda) = -\lambda^2$$
 
 This tells even a function could be linear in some parameters, but its infimum or supremum may not be linear.
