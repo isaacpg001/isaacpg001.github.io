@@ -50,12 +50,14 @@ a)
 
 $\rightarrow $
 Since there are $n!$ combination to cut lines, having a ordered form $ (x_1< x_2< \cdots < x_n)$, and for each case it has a density probability as 
+
 $$f(x_1)\times f(x_2)\times \cdots\times f(x_n) = 1$$
 Therefore, the ordered density distribution could be written as
 $$  f (x_1,x_2, \cdots ,x_n)= n!$$
 
 $\rightarrow $
 Then we have 
+
 $$
 \begin{array}{l}\\
 P(V_1\geq c_1,  V_2\geq c_2,\cdots V_{n+1}\geq c_{n+1}) \\
@@ -72,6 +74,7 @@ $\rightarrow $  Let  $\mathcal{P}_j =   \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdo
 $$Lemma:\ \ \ \ \mathcal{P}_j  = \frac{1}{(n-j+1)!}(U_{j-1}-x_{j-1})^{n-j+1},\ \ if\ j\geq1$$
 
 It is easy to verify that  this holds as $j = n$,  Then 
+
 $$
 \begin{array}{l}\\
 \mathcal{P}_{j-1} =\int_{x_{j-2}\ \ +c_{j-1}}^{U_{j-1}} dx_{j-1}\mathcal{P}_{j} \\
