@@ -73,14 +73,11 @@ $$
 
 where $U_j = 1-\sum_{i = j+1}^{n+1} c_i$ and $x_0=0$. 
 
-$\rightarrow$  
-
-Let $$\ \mathcal{P}_{j} = \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdots \int_{x_{n-1}\ \ +c_n}^{U_n} dx_n$$.  Now we will show that 
+$\rightarrow$  Let $$\ \mathcal{P}_{j} = \int_{x_{j-1}\ \ +c_{j}}^{U_j} dx_j \cdots \int_{x_{n-1}\ \ +c_n}^{U_n} dx_n$$.  Now we will show that 
 
 $$Lemma:\ \ \ \ \mathcal{P}_j  = \frac{1}{(n-j+1)!}(U_{j-1}-x_{j-1})^{n-j+1},\ \ if\ j\geq1$$
 
 It is easy to verify that  this holds as $j = n$,  Then 
-
 $$
 \begin{array}{l}\\
 \mathcal{P}_{j-1} =\int_{x_{j-2}\ \ +c_{j-1}}^{U_{j-1}} dx_{j-1}\mathcal{P}_{j} \\
