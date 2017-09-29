@@ -1,6 +1,12 @@
-
-<center> <h1> Solutions to Homework 3 of Engeneering Statistics</h1> </center>
-
+---
+layout: post
+title: Solutions to Homework 3 of Engeneering Statistics
+categories:
+- HomeWork
+tags:
+- Engeneering Statistics
+- Solutions
+---
 
 1.
 
