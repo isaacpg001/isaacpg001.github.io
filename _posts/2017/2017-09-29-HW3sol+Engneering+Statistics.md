@@ -8,6 +8,9 @@ tags:
 - Solutions
 ---
 
+
+[For Questions: please click here](https://github.com/isaacpg001/isaacpg001.github.io/blob/master/source/hw3.pdf)
+
 1.
 
 a).
