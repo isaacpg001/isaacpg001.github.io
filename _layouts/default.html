@@ -20,6 +20,38 @@
 <script type="text/javascript"
    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
+
+
+{% include nav.html %}
+
+        <main class="page-main">
+            <header class="page-header">
+                <hgroup class="page-hgroup">
+                <h1 class="page-title"><a class="page-title-link" href="{% if page.title %}{{ page.url }}{% else %}{{ site.home }}{% endif %}">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</a>
+                {% if page.url == '/archive.html' %}<input class="page-search-input" type="text" placeholder="搜索（回车全文搜索）" />{% endif %}
+                </h1>
+                    <h2 class="page-subtitle">
+                    {% if page.date %}
+                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y 年 %m 月 %d 日 %R" }}</time>
+                        <span class="post-count">本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟</span>
+                    {% elsif paginator or page.url == '/tech.html' or page.url == '/life.html' %}
+                        <div class="post-cats">
+                            <a class="post-cat-tag{% if paginator %} active{% endif %}" href="/">全部</a>
+                            <a class="post-cat-tag{% if page.url == '/tech.html' %} active{% endif %}" href="/tech.html">技术</a>
+                            <a class="post-cat-tag{% if page.url == '/life.html' %} active{% endif %}" href="/life.html">生活</a>
+                        </div>
+                    {% else %}
+                        {{ page.description }}
+                    {% endif %}
+                    </h2>
+                </hgroup>
+            </header>
+          
+          
+          
+          
+
+
 <html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -77,26 +109,6 @@
 
   
   
-            <header class="page-header">
-                <hgroup class="page-hgroup">
-                <h1 class="page-title"><a class="page-title-link" href="{% if page.title %}{{ page.url }}{% else %}{{ site.home }}{% endif %}">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</a>
-                {% if page.url == '/archive.html' %}<input class="page-search-input" type="text" placeholder="搜索（回车全文搜索）" />{% endif %}
-                </h1>
-                    <h2 class="page-subtitle">
-                    {% if page.date %}
-                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y 年 %m 月 %d 日 %R" }}</time>
-                        <span class="post-count">本文 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，阅读全文约需 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟</span>
-                    {% elsif paginator or page.url == '/tech.html' or page.url == '/life.html' %}
-                        <div class="post-cats">
-                            <a class="post-cat-tag{% if paginator %} active{% endif %}" href="/">全部</a>
-                            <a class="post-cat-tag{% if page.url == '/tech.html' %} active{% endif %}" href="/tech.html">技术</a>
-                            <a class="post-cat-tag{% if page.url == '/life.html' %} active{% endif %}" href="/life.html">生活</a>
-                        </div>
-                    {% else %}
-                        {{ page.description }}
-                    {% endif %}
-                    </h2>
-                </hgroup>
-            </header>
+
 </html>
 
