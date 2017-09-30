@@ -45,7 +45,15 @@ g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2 ) \geq \alpha g^- (\lambda_1) + (1-\al
 \end{array}
 $$
 
+For generazation of comment above 
 
+If g is convex function,
+$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \leq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \leq \alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2) $$ 
+Therefore $$g^+(\alpha\lambda_1 + (1-\alpha)\lambda_2)<\alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2)$$
+
+If g is concave function,
+$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \geq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \geq \alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2) $$ 
+Therefore $$g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2)>\alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2)$$
 #### 4. Besides 
 If $f(x,\lambda) = x^2 -2\lambda x$, which is linear in $\lambda$, the infimum of $f(x,\lambda)$ is 
 
