@@ -7,7 +7,7 @@ tags:
 -  Optimal Control
 ---
 
-$Lemma:$  <span style="color:blue;font-size: 1em;">the supremum(infimum) of the set of affine functions is convex(concave)</span>
+$Lemma:$  <span style="color:blue;font-size: 1em;">the supremum(infimum) of the set of convex(concave) functions is convex(concave)</span>
 
 ####  1. infimum and supremum 
 The infimum is the greatest lower bound of a set S. Consequently, the supremum is also referred to as the least upper bound (or LUB).
