@@ -1,4 +1,11 @@
-
+---
+layout: post
+title: Positive Definiteness and  Inequality
+categories:
+- Useful Formular
+tags:
+-  Optimal Control
+---
 
 Suppose 
 
