@@ -35,7 +35,7 @@ $C - B^TA^{-1}B$ is called the Schur complement of A in X.
 #### Application 
 
 
-If x and y is matrix, and $S = \{(x,y,t)|y\succ 0\ and\ x^Ty^{-1}x\neq t\}$ , then S is convex,
+If x and y is matrix, and $S = {(x,y,t)|y\succ 0\ and\ x^Ty^{-1}x\neq t}$ , then S is convex,
 
 From the conclusion before, $C=t,\ B = X,\ A = Y$, therefore 
 
@@ -44,11 +44,14 @@ Y&x \\
 x^T&t\end{array}
 \right] \succeq 0
 $$
+
 Then, 
-$$S = \{(x,y,t)|y\succ 0\ and\  \left[\begin{array}{cc} 
+
+$$S = {(x,y,t)|y\succ 0\ and\  \left[\begin{array}{cc} 
 Y&x \\
 x^T&t\end{array}
 \right] \succeq 0}$$
+
 Because the condition above is linear in $x,y,t$ S must be convex set
 
 #### Comments
