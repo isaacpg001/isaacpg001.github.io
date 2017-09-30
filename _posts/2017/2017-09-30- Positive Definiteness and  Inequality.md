@@ -16,15 +16,9 @@ u \\
 v\end{array}
 \right)
 $. If $A\succeq 0$ and $\det A\neq 0$, in the space spanned by $u$, f(u,v) minimizes at $u = - A^-1Bv$, followed by
-$$f(u,v) = v^TSv $$
+$$f(u,v) = v^T(C - B^TA^{-1}B)v $$
+Then, we could find that
+$$ C - B^TA^{-1}B\succ 0 \Longleftrightarrow X \succ 0\ \text{under the condition }A\succeq 0 \det A\neq 0$$
 
-where $S = C - B^TA^{-1}B$
-
-
-Conclusion:
-
-As $A\succeq 0$ and $\det A\neq 0$,
-$$ S\succ 0 \Longleftrightarrow X \succ 0$$
-
-$$ S\succeq 0 \Longleftrightarrow X \succeq 0$$
+$$ C - B^TA^{-1}B\succeq 0 \Longleftrightarrow X \succeq 0\ \text{under the condition }A\succeq 0 \det A\neq 0$$
 
