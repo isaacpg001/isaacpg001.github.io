@@ -24,6 +24,6 @@ $$f(u,v) = v^TSv $$
 
 where $S = C - B^TA^{-1}B$, then S should be positive definite.
 
-In summary, $$X\succ 0 \rightarraow A \succ 0,\ \ S \succ 0$$
+In summary, $$X\succ 0 \Longleftrightarrow A \succ 0,\ \ S \succ 0$$
 
 
