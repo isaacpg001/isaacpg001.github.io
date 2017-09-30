@@ -29,9 +29,9 @@ $$f(u,v) = v^T(C - B^TA^{-1}B)v $$
 
 Then, we could find that
 
-$$ \text{under the condition }A\succeq 0 \det A\neq 0:\ \ C - B^TA^{-1}B\succ 0 \Longleftrightarrow X \succ 0\ $$
+$$A\succeq 0\ and\ \det A\neq 0:\ \ C - B^TA^{-1}B\succ 0 \Longleftrightarrow X \succ 0\ $$
 
-$$ \text{under the condition }A\succeq 0 \det A\neq 0:\ \ C - B^TA^{-1}B\succeq 0 \Longleftrightarrow X \succeq 0$$
+$$A\succeq 0\ and\ \det A\neq 0:\ \ C - B^TA^{-1}B\succeq 0 \Longleftrightarrow X \succeq 0$$
 
 #### 1. Schur complement
 
