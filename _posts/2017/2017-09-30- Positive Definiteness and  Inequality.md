@@ -21,11 +21,11 @@ Then, we could find that
 $$ \text{under the condition }A\succeq 0 \det A\neq 0:\ \ C - B^TA^{-1}B\succ 0 \Longleftrightarrow X \succ 0\ $$
 $$ \text{under the condition }A\succeq 0 \det A\neq 0:\ \ C - B^TA^{-1}B\succeq 0 \Longleftrightarrow X \succeq 0$$
 
-** Schur complement **
+##### Schur complement
 
 $C - B^TA^{-1}B$ is called the Schur complement of A in X.
 
-** Application ** 
+#### Application 
 
 
 If x and y is matrix, and $S = \{(x,y,t)|y\succ 0\ and\ x^Ty^{-1}x\neq t\}$ , then S is convex,
@@ -43,4 +43,8 @@ Y&x \\
 x^T&t\end{array}
 \right] \succeq 0}$$
 Because the condition above is linear in $x,y,t$ S must be convex set
+
+#### Comments
+
+This result will be useful to change an inequality question to matrix definiteness related. 
 
