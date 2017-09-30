@@ -25,11 +25,6 @@ $$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \geq \alpha g(\lambda_1, x)  + (1
 From the same argument, we get
 $$g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2)\geq \alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2)$$
 
-
-An affine function is a function composed of a linear function + a constant and its graph is a straight line. The general equation for an affine function in 1D is: $$y = Ax + c$$.  Or in arbitary dimensions
-
-$$ F(\vec{x})=\sum_i a_i x_i +const $$
-
 #### 3. A case Study
 An affine function takes this form
 
@@ -39,7 +34,7 @@ which could be reagrded as a special case both in convex and concave functions.
 
 The Lagrange dual function we will study latter will certainly be a concave,
 
-$$L = \inf_{x\in D} f_0(x) + \sum_i \lambda_i f_i(x) + \sum_i v_i h_i(x)$$
+$$g(\lambda,v) = \inf_{x\in D} f_0(x) + \sum_i \lambda_i f_i(x) + \sum_i v_i h_i(x)$$
 
 
 #### 4. Besides 
