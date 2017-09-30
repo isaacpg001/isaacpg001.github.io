@@ -12,48 +12,36 @@ $Lemma:$  <span style="color:blue;font-size: 1em;">the supremum(infimum) of the 
 ####  1. infimum and supremum 
 The infimum is the greatest lower bound of a set S. Consequently, the supremum is also referred to as the least upper bound (or LUB).
 
-#### 2. Affine Function 
+#### 2.Convexity and Concavity
+
+If g is convex function,
+$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \leq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \leq \alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2) $$ 
+
+Since the statement holds for every x, we have 
+$$g^+(\alpha\lambda_1 + (1-\alpha)\lambda_2)\leq \alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2)$$
+
+If g is concave function,
+$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \geq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \geq \alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2) $$ 
+From the same argument, we get
+$$g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2)\geq \alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2)$$
+
 
 An affine function is a function composed of a linear function + a constant and its graph is a straight line. The general equation for an affine function in 1D is: $$y = Ax + c$$.  Or in arbitary dimensions
 
 $$ F(\vec{x})=\sum_i a_i x_i +const $$
 
+#### 3. A case Study
+An affine function takes this form
 
-#### 3.Convexity and Concavity
+$$ F(x)=A x +b $$
 
-Suppose g is an affine function on $\lambda$ space. 
-$$g(\alpha\lambda_1 + (1-\alpha)\lambda_2 , x) = \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) $$
+which could be reagrded as a special case both in convex and concave functions.
 
-Besides, we denote that $g^+(\lambda) := \sup_{x\in D}g(\lambda, x)$ and $g^-(\lambda) := \inf_{x\in D}g(\lambda, x)$ . 
+The Lagrange dual function we will study latter will certainly be a concave,
+
+$$L = \inf_{x\in D} f_0(x) + \sum_i \lambda_i f_i(x) + \sum_i v_i h_i(x)$$
 
 
-$$
-g(\alpha\lambda_1 + (1-\alpha)\lambda_2 , x) = \alpha g(\lambda_1, x)  + 
-(1-\alpha)g(\lambda_2, x) = \left\{ 
-\begin{array}{l}
-\leq \alpha g^+ (\lambda_1) + (1-\alpha)g^+(\lambda_2)\\
-\geq \alpha g^- (\lambda_1) + (1-\alpha)g^-(\lambda_2)\\
-\end{array}\right.
-$$
-
-Since the inequlity above holds for every $x$, we could derive that 
-
-$$
-\begin{array}{l}
-g^+(\alpha\lambda_1 + (1-\alpha)\lambda_2 ) \leq \alpha g^+ (\lambda_1) + (1-\alpha)g^+(\lambda_2)\\
-g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2 ) \geq \alpha g^- (\lambda_1) + (1-\alpha)g^-(\lambda_2)\\
-\end{array}
-$$
-
-For generazation of comment above 
-
-If g is convex function,
-$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \leq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \leq \alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2) $$ 
-Therefore $$g^+(\alpha\lambda_1 + (1-\alpha)\lambda_2)<\alpha g^+(\lambda_1)  + (1-\alpha)g^+(\lambda_2)$$
-
-If g is concave function,
-$$ g(\alpha\lambda_1 + (1-\alpha)\lambda_2 ,x) \geq \alpha g(\lambda_1, x)  + (1-\alpha)g(\lambda_2, x) \geq \alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2) $$ 
-Therefore $$g^-(\alpha\lambda_1 + (1-\alpha)\lambda_2)>\alpha g^-(\lambda_1)  + (1-\alpha)g^-(\lambda_2)$$
 #### 4. Besides 
 If $f(x,\lambda) = x^2 -2\lambda x$, which is linear in $\lambda$, the infimum of $f(x,\lambda)$ is 
 
