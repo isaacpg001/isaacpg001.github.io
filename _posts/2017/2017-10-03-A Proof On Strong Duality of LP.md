@@ -1,3 +1,11 @@
+---
+layout: post
+title: A Proof on Strong Duality of LP
+categories:
+- Useful Formular
+tags:
+-  Optimal Control
+---
 
 ### 1. Proof
 
