@@ -1,3 +1,10 @@
+---
+layout: post
+title:  A quasi-convex
+tags:
+-  optimal control
+---
+
 ### Theorem：
 
 $f(x)$ and $g(x)$ are differentiable. $f'(x)\geq 0$, $g'(x)>0$ and $g(x)>0$. 
